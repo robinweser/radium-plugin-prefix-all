@@ -29,7 +29,7 @@ It will not add Opera's `O`-prefix since Opera switched to `Webkit` since versio
 ## Usage
 > NOTE: This usage guide was directly copied from one of [Ian Obermiller](https://github.com/ianobermiller) (Radium maintainer)'s Radium [Plugins](https://github.com/ianobermiller/radium-plugin-validity-pseudos).
 
-`radium-plugin-prefix-all` should be added directly before or after Radium's build-in  `Radium.Plugins.prefix`. Radium plugins are setup by passing a config object to `@Radium`. Since you'll d probably want to use this plugin everywhere you use Radium, you can create your own module with a configured version of Radium:
+`radium-plugin-prefix-all` should be added directly after Radium's build-in  `Radium.Plugins.prefix`. Radium plugins are setup by passing a config object to `@Radium`. Since you'll d probably want to use this plugin everywhere you use Radium, you can create your own module with a configured version of Radium:
 
 `ConfiguredRadium.js`
 
@@ -43,12 +43,12 @@ function ConfiguredRadium(component) {
       Radium.Plugins.mergeStyleArray,
       Radium.Plugins.checkProps,
       Radium.Plugins.resolveMediaQueries,
-
-      prefixAll,
-
       Radium.Plugins.resolveInteractionStyles,
       Radium.Plugins.prefix,
-      Radium.Plugins.checkProps,
+
+			prefixAll,
+
+      Radium.Plugins.checkProps
     ]
   })(component);
 }
