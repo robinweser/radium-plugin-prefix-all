@@ -1,4 +1,7 @@
 # radium-plugin-prefix-all
+```bash
+npm install radium-plugin-prefix-all --save
+```
 Radium plugin that adds all vendor prefixes independent of which userAgent was passed. It works similar to [Autoprefixer](https://github.com/postcss/autoprefixer) which also adds every possible vendor prefix, but uses [inline-style-prefixer](https://github.com/rofrischmann/inline-style-prefixer): a prefixer especially for inline styles written in javascript.
 
 ## Warning
