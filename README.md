@@ -11,7 +11,7 @@ For now it does not resolve [special plugins](https://github.com/rofrischmann/in
 It will not add Opera's `O`-prefix since Opera switched to `Webkit` since version 15.
 
 ## What you get
-```js
+```javascript
 // input
 {
 	flexDirection: 'row'
@@ -35,7 +35,7 @@ It will not add Opera's `O`-prefix since Opera switched to `Webkit` since versio
 
 ```js
 var Radium = require('radium');
-var friendlyPseudos = require('radium-plugin-friendly-pseudos');
+var prefixAll = require('radium-plugin-prefix-all');
 
 function ConfiguredRadium(component) {
   return Radium({
@@ -44,7 +44,7 @@ function ConfiguredRadium(component) {
       Radium.Plugins.checkProps,
       Radium.Plugins.resolveMediaQueries,
 
-      friendlyPseudos,
+      prefixAll,
 
       Radium.Plugins.resolveInteractionStyles,
       Radium.Plugins.prefix,
