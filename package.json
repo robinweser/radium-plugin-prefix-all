@@ -1,0 +1,49 @@
+{
+  "name": "radium-plugin-prefix-all",
+  "version": "1.0.0",
+  "description": "Radium plugin that adds all vendor prefixes",
+  "main": "lib/index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/"
+  ],
+  "scripts": {
+    "test": "npm run build && mocha --recursive --compilers js:babel-core/register",
+    "build": "babel modules --out-dir lib",
+		"release": "npm run build && npm run publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rofrischmann/radium-plugin-prefix-all"
+  },
+  "keywords": [
+    "radium",
+    "radium-plugin",
+    "plugin",
+    "react",
+    "inline-styles",
+    "prefixer",
+    "vendor prefixes"
+  ],
+  "author": "Robin Frischmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rofrischmann/radium-plugin-prefix-all/issues"
+  },
+  "devDependencies": {
+    "babel": "^6.1.18",
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-plugin-add-module-exports": "^0.1.1",
+    "babel-preset-es2015": "^6.1.18",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "rimraf": "^2.4.4",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "inline-style-prefixer": "^0.5.4"
+  }
+}
