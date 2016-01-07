@@ -11,7 +11,7 @@
   "scripts": {
     "test": "npm run build && mocha --recursive --compilers js:babel-core/register",
     "build": "babel modules --out-dir lib",
-		"release": "npm run build && npm run publish"
+		"release": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
