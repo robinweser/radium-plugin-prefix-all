@@ -8,7 +8,9 @@ describe('Adding all vendor prefixes', () => {
       WebkitFlexDirection: 'row',
       MozFlexDirection: 'row',
       msFlexDirection: 'row',
-      flexDirection: 'row'
+      flexDirection: 'row',
+      WebkitBoxDirection: 'normal',
+      WebkitBoxOrient: 'horizontal'
     }
     expect(radiumPluginPrefixAll({style: input})).to.deep.eql({
       style: output

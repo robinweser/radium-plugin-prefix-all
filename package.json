@@ -1,6 +1,6 @@
 {
   "name": "radium-plugin-prefix-all",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Radium plugin that adds all vendor prefixes",
   "main": "lib/index.js",
   "files": [
@@ -44,6 +44,6 @@
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
-    "inline-style-prefixer": "^0.5.4"
+    "inline-style-prefixer": "^0.6.2"
   }
 }
