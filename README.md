@@ -1,4 +1,7 @@
 # radium-plugin-prefix-all
+
+> **Deprecated**: Prefer not using this anymore. It was used to hotfix static prefixing support and did not include every single case. Radium actually implemented the ability to use `prefix-all`.
+
 ```bash
 npm install radium-plugin-prefix-all --save
 ```
