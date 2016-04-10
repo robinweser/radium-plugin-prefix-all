@@ -11,7 +11,7 @@
   "scripts": {
     "test": "npm run build && mocha --recursive --compilers js:babel-core/register",
     "build": "babel modules --out-dir lib",
-		"release": "npm run build && npm publish"
+    "release": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -44,6 +44,6 @@
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
-    "inline-style-prefixer": "^0.6.2"
+    "inline-style-prefixer": "^1.0.3"
   }
 }
